@@ -2,20 +2,73 @@
     ViewBag.Title = "Contact Us";
 }
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-6">
-            <h1>Contact KhumaloCraft</h1>
-            <p class="lead">We'd love to hear from you!</p>
-            <p>If you have any questions, feedback, or inquiries, please don't hesitate to reach out to us. Our team is here to assist you.</p>
-            <ul>
-                <li>Email: info@khumalocraft.com</li>
-                <li>Phone: +27 79 844 5963</li>
-                <li>Address: 19 Poplar Mews, Thornton, 7465</li>
-            </ul>
-        </div>
-        <div class="col-md-6">
-            <!-- You can add a contact form here if needed -->
+<!-- Razor view generated with assistance from ChatGPT -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <!-- Link to Montserrat font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .container {
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .contact-info {
+            margin-top: 50px;
+        }
+
+            .contact-info h1 {
+                font-size: 36px;
+                font-weight: bold;
+                color: #333; /* Dark grey color */
+            }
+
+            .contact-info .lead {
+                font-size: 24px;
+                color: #666; /* Medium grey color */
+            }
+
+            .contact-info p {
+                font-size: 18px;
+                color: #666; /* Medium grey color */
+                margin-bottom: 20px;
+            }
+
+            .contact-info ul {
+                list-style: none;
+                padding: 0;
+            }
+
+            .contact-info li {
+                font-size: 18px;
+                color: #333; /* Dark grey color */
+            }
+
+        /* Additional styles for the contact form if you add it later */
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 contact-info">
+                <img src="~/Images/KHUMALO CRAFT.jpg" alt="Home Image" class="img-fluid home-image mb-4">
+                <h1>Contact KhumaloCraft</h1>
+                <p class="lead">We'd love to hear from you!</p>
+                <p>If you have any questions, feedback, or inquiries, please don't hesitate to reach out to us. Our team is here to assist you.</p>
+                <ul>
+                    <li>Email: info@khumalocraft.com</li>
+                    <li>Phone: +27 79 844 5963</li>
+                    <li>Address: 19 Poplar Mews, Thornton, 7465</li>
+                </ul>
+            </div>
         </div>
     </div>
-</div>
+
+</body>
+</html>

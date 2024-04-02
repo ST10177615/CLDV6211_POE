@@ -2,14 +2,60 @@
     ViewBag.Title = "About Us";
 }
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <h1>About KhumaloCraft</h1>
-            <p class="lead">Connecting artisans worldwide with a discerning audience.</p>
-            <p>KhumaloCraft is more than just an online marketplace. We're a platform dedicated to preserving traditional craftsmanship and fostering global connections. Our mission is to showcase the talent and creativity of artisans from diverse cultures and backgrounds.</p>
-            <p>Each product in our collection tells a story, reflecting the skill, passion, and heritage of its maker. By supporting KhumaloCraft, you're not just purchasing an item – you're investing in craftsmanship, sustainability, and cultural exchange.</p>
-            <p>Join us in celebrating the artistry of handcrafted goods and discover the beauty of traditions reimagined for the modern world.</p>
+<!-- Razor view generated with assistance from ChatGPT -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <!-- Link to Montserrat font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .container {
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .about-content {
+            margin-top: 50px;
+        }
+
+            .about-content h1 {
+                font-size: 36px;
+                font-weight: bold;
+                color: #333; /* Dark grey color */
+            }
+
+            .about-content .lead {
+                font-size: 24px;
+                color: #666; /* Medium grey color */
+            }
+
+            .about-content p {
+                font-size: 18px;
+                color: #666; /* Medium grey color */
+                margin-bottom: 20px;
+            }
+
+        /* Additional styles for specific paragraphs if needed */
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 about-content">
+                <img src="~/Images/KHUMALO CRAFT.jpg" alt="Home Image" class="img-fluid home-image mb-4">
+                <h1>About KhumaloCraft</h1>
+                <p class="lead">Connecting artisans worldwide with a discerning audience.</p>
+                <p>KhumaloCraft is more than just an online marketplace. We're a platform dedicated to preserving traditional craftsmanship and fostering global connections. Our mission is to showcase the talent and creativity of artisans from diverse cultures and backgrounds.</p>
+                <p>Each product in our collection tells a story, reflecting the skill, passion, and heritage of its maker. By supporting KhumaloCraft, you're not just purchasing an item – you're investing in craftsmanship, sustainability, and cultural exchange.</p>
+                <p>Join us in celebrating the artistry of handcrafted goods and discover the beauty of traditions reimagined for the modern world.</p>
+            </div>
         </div>
     </div>
-</div>
+
+</body>
+</html>
