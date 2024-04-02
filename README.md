@@ -1,1 +1,1 @@
-# CLDV6211_POEPART1
+KhumaloCraft Emporium is an e-commerce platform that showcases handcrafted products. 
