@@ -1,0 +1,30 @@
+﻿@model List<CLDV6211_POEPART1.Models.Product>
+
+@{
+    ViewBag.Title = "My Work";
+}
+
+<div class="container">
+    <h1>Discover Our Craftwork</h1>
+    <div class="row">
+        @foreach (var product in Model)
+        {
+            <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                    <img class="card-img-top" src="@Url.Content("~/Images/" + product.ImageUrl)" alt="@product.Name">
+                    <div class="card-body">
+                        <h4 class="card-title">@product.Name</h4>
+                        <p class="card-text">@product.Description</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="#" class="btn btn-sm btn-outline-secondary">View</a>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
+                            </div>
+                            <small class="text-muted">$@product.Price</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

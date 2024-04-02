@@ -1,0 +1,49 @@
+﻿/* Custom Styles for KhumaloCraft Website */
+
+/* Body */
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #000;
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+    color: #ffd700;
+}
+
+    .navbar-brand:hover, .navbar-nav .nav-link:hover {
+        color: #fff;
+    }
+
+/* Page Content */
+.container {
+    color: #fff;
+}
+
+.card {
+    background-color: #222;
+    color: #fff;
+}
+
+.card-title {
+    color: #ffd700;
+}
+
+/* Footer */
+.footer {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Links */
+a {
+    color: #ffd700;
+}
+
+    a:hover {
+        color: #fff;
+    }

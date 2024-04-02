@@ -1,0 +1,52 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+
+<style>
+    body {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        color: #333;
+    }
+
+    h1 {
+        font-size: 36px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .lead {
+        font-size: 24px;
+        color: #666;
+    }
+
+    p {
+        font-size: 18px;
+        color: #444;
+    }
+
+    .btn-primary {
+        font-size: 20px;
+    }
+
+    .container {
+        margin-top: 50px;
+    }
+
+    .home-image {
+        max-width: 200px; /* Adjust size as needed */
+    }
+</style>
+
+<div class="container text-center">
+    <div class="row">
+        <div class="col-md-12">
+            <img src="~/Images/KHUMALO CRAFT.jpg" alt="Home Image" class="img-fluid home-image mb-4">
+            <h1>Welcome to KhumaloCraft</h1>
+            <p class="lead">Discover beautifully handcrafted products from artisans around the world.</p>
+            <p>At KhumaloCraft, we curate a collection of unique, handmade items that celebrate craftsmanship and culture. Browse our selection and find the perfect piece to complement your style.</p>
+            <a class="btn btn-primary btn-lg" href="@Url.Action("MyWork", "Home")">Explore Our Craftwork</a>
+        </div>
+    </div>
+</div>
