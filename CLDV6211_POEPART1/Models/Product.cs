@@ -8,20 +8,24 @@ using System.ComponentModel.DataAnnotations;
 
 namespace CLDV6211_POEPART1.Models
 {
+    // Model for Product
     public class Product
     {
-        public int Id { get; set; }
+        [Key] // Adding Key attribute to specify primary key
+        public int ProductId { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Name is required")] // Adding Required attribute with error message
         public string Name { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Description is required")] // Adding Required attribute with error message
         public string Description { get; set; }
 
-        [Required]
-        [Range(0.01, double.MaxValue)]
+        [Required(ErrorMessage = "Price is required")] // Adding Required attribute with error message
+        [Range(0.01, double.MaxValue, ErrorMessage = "Price must be greater than 0.01")] // Adding Range attribute with error message
         public decimal Price { get; set; }
 
         public string ImageUrl { get; set; }
+        public string Category { get; set; }
+        public bool Availability { get; set; }
     }
 }
